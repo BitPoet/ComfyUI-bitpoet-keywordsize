@@ -1,0 +1,269 @@
+{
+  "id": "2e58d7ee-3403-486b-8ab9-9dfe1718ff7a",
+  "revision": 0,
+  "last_node_id": 9,
+  "last_link_id": 7,
+  "nodes": [
+    {
+      "id": 7,
+      "type": "Bjornulf_ShowStringText",
+      "pos": [
+        1270.0915671580628,
+        3387.3663185862306
+      ],
+      "size": [
+        277.0580494567015,
+        97.98801809803535
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "link": 5
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {}
+        },
+        "cnr_id": "bjornulf_custom_nodes",
+        "ver": "1.1.8",
+        "Node name for S&R": "Bjornulf_ShowStringText"
+      },
+      "widgets_values": [
+        "This is a test prompt that contains the size keyword "
+      ]
+    },
+    {
+      "id": 8,
+      "type": "Bjornulf_ShowInt",
+      "pos": [
+        1277.9926910956503,
+        3540.1213813796226
+      ],
+      "size": [
+        263.78427502223144,
+        76
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "INT",
+          "type": "INT",
+          "link": 6
+        }
+      ],
+      "outputs": [],
+      "title": "Width",
+      "properties": {
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {}
+        },
+        "cnr_id": "bjornulf_custom_nodes",
+        "ver": "1.1.8",
+        "Node name for S&R": "Bjornulf_ShowInt"
+      },
+      "widgets_values": [
+        "1920"
+      ]
+    },
+    {
+      "id": 9,
+      "type": "Bjornulf_ShowInt",
+      "pos": [
+        1281.5043017345795,
+        3669.612023690115
+      ],
+      "size": [
+        257.63895640410647,
+        88
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "INT",
+          "type": "INT",
+          "link": 7
+        }
+      ],
+      "outputs": [],
+      "title": "Height",
+      "properties": {
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {}
+        },
+        "cnr_id": "bjornulf_custom_nodes",
+        "ver": "1.1.8",
+        "Node name for S&R": "Bjornulf_ShowInt"
+      },
+      "widgets_values": [
+        "1080"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "String Literal",
+      "pos": [
+        284.7380113880082,
+        3402.1989229737337
+      ],
+      "size": [
+        400,
+        200
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            1
+          ]
+        }
+      ],
+      "title": "Input Prompt",
+      "properties": {
+        "cnr_id": "comfy-image-saver",
+        "ver": "65e6903eff274a50f8b5cd768f0f96baf37baea1",
+        "Node name for S&R": "String Literal",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.5.2"
+        }
+      },
+      "widgets_values": [
+        "This is a test prompt that contains the size keyword [hello]"
+      ]
+    },
+    {
+      "id": 1,
+      "type": "BitPoetKeywordSizeNode",
+      "pos": [
+        740.4485030283638,
+        3405.7043882940475
+      ],
+      "size": [
+        410.76666870117185,
+        200
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "prompt"
+          },
+          "link": 1
+        }
+      ],
+      "outputs": [
+        {
+          "name": "prompt",
+          "type": "STRING",
+          "links": [
+            5
+          ]
+        },
+        {
+          "name": "width",
+          "type": "INT",
+          "links": [
+            6
+          ]
+        },
+        {
+          "name": "height",
+          "type": "INT",
+          "links": [
+            7
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "BitPoetKeywordSizeNode",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.5.2"
+        }
+      },
+      "widgets_values": [
+        "",
+        "[default]:1024x1024\n[hello]:1920x1080",
+        true
+      ]
+    }
+  ],
+  "links": [
+    [
+      1,
+      3,
+      0,
+      1,
+      0,
+      "STRING"
+    ],
+    [
+      5,
+      1,
+      0,
+      7,
+      0,
+      "STRING"
+    ],
+    [
+      6,
+      1,
+      1,
+      8,
+      0,
+      "INT"
+    ],
+    [
+      7,
+      1,
+      2,
+      9,
+      0,
+      "INT"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "workflowRendererVersion": "LG",
+    "ue_links": [],
+    "ds": {
+      "scale": 1.1390784489764685,
+      "offset": [
+        -107.43479733475816,
+        -3196.243700738472
+      ]
+    },
+    "links_added_by_ue": [],
+    "frontendVersion": "1.39.19",
+    "VHS_latentpreview": false,
+    "VHS_latentpreviewrate": 0,
+    "VHS_MetadataImage": true,
+    "VHS_KeepIntermediate": true
+  },
+  "version": 0.4
+}
