@@ -9,6 +9,8 @@ Input an arbitrary number of definitions in the form [keyword]:WIDTHxHEIGHT, one
 Connect the outputs prompt, width and height.   
 Optionally, toggle the remove_if_found switch, which will strip the found keyword from the prompt.   
 
+Aside from the [default] keyword, you can format your keywords however you like.
+
 ## License
 
 Released under GNU Public License V3. See file "LICENSE" for details.
